@@ -1,0 +1,68 @@
+.home{
+    background-image: url("./img/IMG-20240925-WA0001.jpg");
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    background-position: center;
+    background-size: cover;
+    }
+
+    .title{
+        color: yellow;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 80px;
+        font-weight: 800;
+        border: 5px solid;
+        width: fit-content;
+        height: fit-content;
+        background-color: black;
+        margin-right: auto;
+        margin-left: auto;
+        text-shadow: 5px 5px red;
+        }
+     .recipes_list{
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+    font-size: 70px;
+    color: yellow;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 10px;
+    border: 5px solid;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+body{
+background-color: aqua;
+}
+h1{
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+    border: 5px solid;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(179, 255, 0);
+    margin-right: auto;
+    margin-left: auto;
+    text-shadow: 5px 5px rgb(255, 81, 0);
+}
+h2,h3,h4,p,ul,ol{
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+h2,h3,h4{
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+    
+}
+ul,ol{
+    font-size: 15px;
+}
