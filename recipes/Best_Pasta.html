@@ -5,13 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best_Tomato_Pasta</title>
+    <link rel="icon" type="image/x-icon" href="/favourites.gif" />
   </head>
 
   <body class="pages">
+    <!--This is the navigationbar-->
     <nav>
+      <p>TasteQuest</p>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li class="drop">
+        <li class="dropdown">
           <a href="#" class="drpbutton"> Quick & Easy</a>
           <div class="drop-content">
             <a href="../recipes/Best_Pasta.html">Tomato Pasta</a>
@@ -25,7 +28,7 @@
           </div>
         </li>
 
-        <li class="drop">
+        <li class="dropdown">
           <a href="#" class="drpbutton">Gourmet Delights</a>
           <div class="drop-content">
             <a href="../recipes/Best_Pasta.html">Tomato Pasta</a>
@@ -39,7 +42,7 @@
           </div>
         </li>
 
-        <li class="drop">
+        <li class="dropdown">
           <a href="#" class="drpbutton">Global Flavors</a>
 
           <div class="drop-content">
@@ -54,7 +57,7 @@
           </div>
         </li>
 
-        <li class="drop">
+        <li class="dropdown">
           <a href="#" class="drpbutton"> Sweet Treats</a>
           <div class="drop-content">
             <a href="../recipes/Best_Pasta.html">Tomato Pasta</a>
@@ -70,48 +73,90 @@
       </ul>
     </nav>
 
-    <h1 class="page heading">Tomato Pasta</h1>
-    <img class="recpic" src="../img/best_pasta.jpg" alt="TomatoPasta" />
-    <h2 class="recipe">Description:</h2>
+    <h1 class="pageheading">Tomato Pasta</h1>
+
     <p class="descrip">
-      <strong>Tomato Pasta</strong> dishes are indulgent and comforting,
+      <span>Tomato Pasta</span> dishes are indulgent and comforting,
       characterized by their rich, velvety sauces. Typically, the pasta is
       cooked al dente and then coated in a creamy sauce made from ingredients
       like heavy cream, butter, and Parmesan cheese.
     </p>
-    <h3 class="recipe">Ingredients:</h3>
-    <ul>
-      <li>1 pound sweet Italian sausage, sliced</li>
-      <li>¾ pound lean ground beef</li>
-      <li>½ cup minced onion</li>
-      <li>2 cloves garlic, crushed</li>
-      <li>1 (28 ounce) can crushed tomatoes</li>
-      <li>2 (6.5 ounce) cans tomato sauce</li>
-      <li>2 (6 ounce) cans tomato paste</li>
-      <li>½ cup water</li>
-      <li>2 tablespoons white sugar</li>
-      <li>1 ½ teaspoons dried basil</li>
-      <li>1 teaspoon Italian seasoning</li>
-      <li>½ teaspoon fennel seed</li>
-      <li>½ teaspoon salt</li>
-      <li>¼ teaspoon ground black pepper</li>
-    </ul>
-    <h4 class="recipe">Steps:</h4>
-    <ol>
-      <li>Gather all ingredients.</li>
-      <li>
-        Cook sausage, beef, onion, and garlic in a large pot or Dutch oven over
-        medium heat until browned; drain fat.
-      </li>
-      <li>Stir in crushed tomatoes, tomato sauce, tomato paste, and water.</li>
-      <li>
-        Mix in sugar, basil, Italian seasoning, fennel seed, salt, and pepper.
-      </li>
-      <li>
-        Cover and simmer, stirring occasionally, until cooked through, about 1 ½
-        hours.
-      </li>
-    </ol>
-    <em>Serve with your favorite pasta and enjoy!</em>
+    <!--This is the preptime card--->
+    <section class="topbanner">
+      <img class="recpic1" src="../img/best_pasta.jpg" alt="TomatoPasta" />
+      <img class="recpic2" src="../img/Pasta_prep.jpg" alt="TomatoPasta" />
+      <div class="timecard">
+        <ul>
+          <img
+            class="time"
+            src="../img/Waiting for Food.png"
+            width="150px"
+            height="150px"
+          />
+
+          <li>Prep Time:25 minutes</li>
+          <li>Cook Time:35 minutes</li>
+          <li>Total Time:60 minutes</li>
+        </ul>
+      </div>
+    </section>
+<button>Share</button> <button>Download PDF</button>
+
+<!--This is the ingredients and steps dropdown-->
+    <section class="carddropdown">
+      <ul>
+        <li class="inglist">
+         <h2> <a href="#">Ingredients<span class="emj">🔽</span></a><h2>
+          <div class="ing-contents">
+            <ul>
+              <li>1 pound sweet Italian sausage, sliced</li>
+              <li>¾ pound lean ground beef</li>
+              <li>½ cup minced onion</li>
+              <li>2 cloves garlic, crushed</li>
+              <li>1 (28 ounce) can crushed tomatoes</li>
+              <li>2 (6.5 ounce) cans tomato sauce</li>
+              <li>2 (6 ounce) cans tomato paste</li>
+              <li>½ cup water</li>
+              <li>2 tablespoons white sugar</li>
+              <li>1 ½ teaspoons dried basil</li>
+              <li>1 teaspoon Italian seasoning</li>
+              <li>½ teaspoon fennel seed</li>
+              <li>½ teaspoon salt</li>
+              <li>¼ teaspoon ground black pepper</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <ol>
+        <li class="steps">
+          <h2><a href="#">Steps <span class="emj">🔽</span></a></h2>
+
+          <div class="stps-contents">
+            <ol>
+              <li>1️⃣ Gather all ingredients.</li>
+              <li>
+                2️⃣ Cook sausage, beef, onion, and garlic in a large pot or Dutch
+                oven over medium heat until browned; drain fat.
+              </li>
+              <li>
+                3️⃣ Stir in crushed tomatoes, tomato sauce, tomato paste, and
+                water.
+              </li>
+              <li>
+                4️⃣ Mix in sugar, basil, Italian seasoning, fennel seed, salt,
+                and pepper.
+              </li>
+              <li>
+                5️⃣Cover and simmer, stirring occasionally, until cooked through,
+                about 1 ½ hours.
+              </li>
+              <p>Serve with your favorite pasta and enjoy!</p>
+                            </ol>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+
   </body>
 </html>

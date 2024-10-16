@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chicken_Marsala</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" type="image/x-icon" href="/favourites.gif" />
   </head>
   <body class="pages">
+    <!--This is the navigationbar-->
     <nav>
+      <p>TasteQuest</p>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li class="drop">
+        <li class="dropdown">
           <a href="#" class="drpbutton"> Quick & Easy</a>
           <div class="drop-content">
             <a href="../recipes/Best_Pasta.html">Tomato Pasta</a>
@@ -24,7 +27,7 @@
           </div>
         </li>
 
-        <li class="drop">
+        <li class="dropdown">
           <a href="#" class="drpbutton">Gourmet Delights</a>
           <div class="drop-content">
             <a href="../recipes/Best_Pasta.html">Tomato Pasta</a>
@@ -38,7 +41,7 @@
           </div>
         </li>
 
-        <li class="drop">
+        <li class="dropdown">
           <a href="#" class="drpbutton">Global Flavors</a>
 
           <div class="drop-content">
@@ -53,7 +56,7 @@
           </div>
         </li>
 
-        <li class="drop">
+        <li class="dropdown">
           <a href="#" class="drpbutton"> Sweet Treats</a>
           <div class="drop-content">
             <a href="../recipes/Best_Pasta.html">Tomato Pasta</a>
@@ -69,15 +72,9 @@
       </ul>
     </nav>
 
-    <h1 class="page heading">Chicken Marsala</h1>
-    <img
-      class="recpic"
-      src="../img/Chicken_Masala.jpg"
-      alt="Hot Chicken Marsala"
-    />
-    <h2 class="recipe">Description</h2>
-    <p class="disp">
-      <strong>Chicken Marsala</strong> is a classic Italian-American dish
+    <h1 class="pageheading">Chicken Marsala</h1>
+    <p class="descrip">
+      <span>Chicken Marsala</span> is a classic Italian-American dish
       featuring tender chicken breasts sautéed in a rich, flavorful Marsala wine
       sauce. The dish is typically made with boneless, skinless chicken breasts
       that are lightly seasoned, dredged in flour, and pan-fried until golden
@@ -85,8 +82,33 @@
       fortified wine from Sicily—and often includes sautéed mushrooms, garlic,
       and sometimes onions or shallots.
     </p>
-    <h3 class="recipe">Ingredients</h3>
-    <ul>
+
+    <!--This is the preptime card--->
+<section class="topbanner">
+      <img class="recpic1" src="../img/Chicken_Masala.jpg" alt="Hot Chicken Marsala" />
+      <img class="recpic2" src="../img/Chicken_marsala_ing.jpg" alt="Hot Chicken Marsala ingredients" />
+      <div class="timecard">
+        <ul>
+          <img
+            class="time"
+            src="../img/Waiting for Food.png"
+            width="150px"
+            height="150px"
+          />
+
+          <li>Prep Time:25 minutes</li>
+          <li>Cook Time:35 minutes</li>
+          <li>Total Time:60 minutes</li>
+        </ul>
+      </div>
+      <!--This is the ingredients and steps dropdown-->
+    </section>
+ <section class="carddropdown">
+      <ul>
+        <li class="inglist">
+<h2><a href="#">Ingredients<span class="emj">🔽</span></a></h2>
+          <div class="ing-contents">
+            <ul>
       <li>¼ cup all-purpose flour</li>
       <li>½ teaspoon garlic salt</li>
       <li>¼ teaspoon ground black pepper</li>
@@ -97,24 +119,37 @@
       <li>1 cup sliced fresh mushrooms</li>
       <li>½ cup Marsala wine</li>
     </ul>
-    <h4 class="recipe">Steps</h4>
-    <ol>
-      <li>
+  </div>
+        </li>
+      </ul>
+       <ol>
+        <li class="steps">
+        <h2>  <a href="#">Steps <span class="emj">🔽</span></a></h2>
+
+          <div class="stps-contents">
+            <ol>
+      <li>1️⃣
         Whisk flour, garlic salt, pepper, and oregano together in a bowl. Dredge
         chicken in flour mixture until lightly coated.
       </li>
-      <li>
+      <li>2️⃣
         Heat oil and butter in a large skillet over medium heat. Add chicken and
         cook until lightly browned, about 2 minutes. Flip chicken and add
         mushrooms. Cook, stirring mushrooms occasionally, until chicken is
         browned on the other side, about 2 more minutes.
       </li>
-      <li>
+      <li>3️⃣
         Pour Marsala wine over chicken. Reduce the heat to low, cover, and
         simmer until chicken is no longer pink in the center and the juices run
         clear, about 10 minutes. An instant-read thermometer inserted into the
         center should read at least 165 degrees F (74 degrees C).
       </li>
+      <p>Serve with your favorite Chicken Masala and enjoy!</p>
     </ol>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </body>
   </body>
 </html>

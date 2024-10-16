@@ -2,78 +2,73 @@
 *::before,
 *::after {
   box-sizing: border-box;
-
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-* body {
   margin: 0px;
-}
-/*Navigation*/
-
-nav ul {
-  margin: 0px;
-  padding: 25px;
+  padding: 0px;
   list-style: none;
-  overflow: hidden;
-  background-image: linear-gradient(
-    hsl(0, 100%, 39%),
-    hsl(0, 0%, 100%),
-    hsla(335, 100%, 50%, 0.514)
-  );
-  min-width: fit-content;
-}
-nav li {
-  float: left;
-}
-
-nav li a,
-.drpbutton {
-  display: inline-block;
-  font-size: 1.2rem;
-  color: hsla(0, 0%, 1%, 0.959);
-  text-align: center;
-  padding: 15px;
   text-decoration: none;
 }
+
+/*Navigation*/
+nav p {
+  padding: 20px 0px 0px 30px;
+  font-size: 2.5rem;
+  line-height: 55px;
+  float: left;
+  color: chartreuse;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+nav {
+  width: 100%;
+  height: 90px;
+  background-image: linear-gradient(#6a82fb, #fc5c7d);
+}
+
+nav ul {
+  float: left;
+  padding: 17px 0px 0px 56px;
+}
+
+nav ul li {
+  float: left;
+  position: relative;
+}
+
+nav ul li a {
+  font-size: 2.5rem;
+  font-family: "Times New Roman", Times, serif;
+  padding: 11px;
+  display: block;
+}
+
+.drop-content {
+  position: absolute;
+  display: none;
+  background-image: linear-gradient(hsl(348, 96%, 67%), hsl(230, 95%, 70%));
+}
+
+.drop-content a {
+  min-width: 405px;
+}
+
+/*Hover background*/
 nav li a:hover,
-.drpbutton:hover,
-.drop:hover {
-  background-color: hsl(0, 100%, 50%);
+.dropdown:hover .drpbutton {
+  background-color: hsla(0, 100%, 50%, 0.603);
+}
+/*dropdown when Hover */
+.dropdown:hover .drop-content {
+  display: block;
 }
 
 /*Background image*/
-.bgimg {
+body {
   background-color: hsl(0, 0%, 100%);
   background-image: url(./img/bghm.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-}
-
-.drop-content {
-  display: none;
-  position: absolute;
-  background-image: linear-gradient(
-    hsla(46, 100%, 50%, 0.644),
-    hsla(78, 95%, 50%, 0.575),
-    hsla(0, 100%, 50%, 0.71)
-  );
-  min-width: 160px;
-  z-index: 1;
-}
-.drop-content a {
-  color: hsl(0, 0%, 0%);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-.drop-content a:hover {
-  background-color: rgba(255, 0, 0, 0.747);
-}
-.drop:hover .drop-content {
-  display: block;
 }
 
 /*TOP heading*/
@@ -86,32 +81,176 @@ nav li a:hover,
   text-shadow: hsl(0, 100%, 50%) 5px 16px 0px;
 }
 /*introduction*/
-.space {
-  color: hsl(98, 100%, 51%);
+.introsec {
   padding: 15px 60px;
-
-  font-size: 1.5rem;
+  margin: 25px;
+  color: hsl(98, 100%, 51%);
+  font-size: 2.5rem;
   text-align: center;
-  background-color: hsla(262, 99%, 44%, 0.1);
-  border-radius: 215px;
+  background-color: hsl(0deg 99% 44% / 20%);
+  border-radius: 40px;
 }
 
-/*introtitle*/
-.title {
-  text-align: center;
-}
-
-.recpic {
-  width: 572px;
-  height: 310px;
-}
-
-.heading {
-  font-size: 8rem;
-  color: hsl(273, 100%, 59%);
-  text-shadow: 5px 8px hsl(0, 100%, 50%);
-}
-.recipe {
+p.introsec {
   padding: 15px;
+  margin: 25px;
+  border-radius: 40px;
   font-size: 3rem;
+  text-align: center;
+  font-family: serif, Arial, Helvetica, sans-serif;
+}
+
+.introsec:hover h2 {
+  font-size: 5rem;
+  text-shadow: -9px -8px 7px rgb(0, 0, 0);
+}
+/*recipiepages*/
+.pageheading {
+  padding: 15px;
+  margin: 25px;
+  font-size: 5.5rem;
+  color: hsl(0, 86%, 48%);
+  text-shadow: -1px 5px hsl(62deg 99% 57% / 55%);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*page heading*/
+h1.pageheading:hover {
+  font-size: 10rem;
+}
+
+P.descrip {
+  padding: 25px;
+  margin: 15px;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(0deg 56.55% 80.4% / 31%);
+  border-radius: 40px;
+}
+
+/*hover effect on discription*/
+p:hover span {
+  font-size: 6rem;
+  text-shadow: -5px -4px hsl(0, 100%, 49%);
+  font-weight: bold;
+}
+/*Prep time BannerSection*/
+section.topbanner {
+  padding: 15px;
+  margin: 10px;
+  border-radius: 40px;
+  background-color: hsl(0deg 56.55% 80.4% / 31%);
+  display: inline-block;
+  width: 1050px;
+  margin-left: 250px;
+  position: relative;
+}
+.recpic1,
+.recpic2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+}
+.recpic1 {
+  float: left;
+}
+
+.recpic2 {
+  float: right;
+}
+
+.timecard li {
+  font-size: 2.5rem;
+  margin-left: 50px;
+}
+.timecard ul {
+  text-align: center;
+}
+
+/*Ingredients and steps Cardset*/
+.carddropdown {
+  position: relative;
+  padding: 55px;
+}
+
+.carddropdown a {
+  padding: 15px;
+  font-size: 2.5rem;
+  color: hsl(64, 100%, 60%);
+  background-color: hsl(0, 0%, 00%);
+  border: solid rgba(163, 192, 0, 0.911) 2px;
+  border-radius: 3px;
+  display: block;
+  text-align: center;
+}
+
+/*dropbutton*/
+span.emj {
+  float: left;
+}
+
+/*dropdown-contents*/
+div.ing-contents,
+div.stps-contents {
+  padding-left: 35px;
+  background-color: hsl(0deg 56.55% 80.4% / 51%);
+  display: inline-block;
+}
+
+div.ing-contents li::before {
+  content: "✅  ";
+}
+
+div.ing-contents li,
+div.stps-contents li {
+  padding: 18px 0px;
+  display: inline-block;
+  font-size: 2.5rem;
+  color: hsl(59, 100%, 50%);
+  min-width: 850px;
+}
+.stps-contents em {
+  background-color: hsla(348, 90%, 44%, 0.769);
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+}
+
+/*dropdown-contents hidden by default */
+div.ing-contents,
+div.stps-contents {
+  display: none;
+}
+
+/*Dropcontents*/
+.inglist:hover div.ing-contents,
+.steps:hover div.stps-contents {
+  display: inline-block;
+}
+
+.carddropdown ul li a:hover,
+.carddropdown ol li a:hover {
+  background-color: #ff003391;
+}
+.stps-contents:last-of-type {
+  font-size: 3.5rem;
+  color: #000000d2;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+button {
+  position: relative;
+  display: inline-block;
+  border: yellow solid;
+  border-radius: 30px;
+  padding: 25px;
+  font-size: 1rem;
+  background-color: black;
+  color: rgb(255, 255, 0);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+button:hover {
+  background-color: hsla(34, 79%, 85%, 0.596);
 }
